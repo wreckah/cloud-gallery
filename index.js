@@ -36,6 +36,6 @@ Gallery.prototype.thumb = function(req, res) {
   return this.client.thumb(req.params.img, res);
 };
 
-module.exports = function createGallery(config) {
-    return new Gallery(config);
+module.exports = function createGallery(config, template) {
+    return new Gallery(config, template);
 };
