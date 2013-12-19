@@ -1,7 +1,7 @@
 var fs = require('fs');
 var handlebars = require('handlebars');
 
-var Gallery = function(config) {
+var Gallery = function(config, template) {
   this.config = config || {};
   if (!this.config.cloud) {
     throw Error('Unspecified "cloud" in config');
@@ -11,7 +11,9 @@ var Gallery = function(config) {
     throw Error('Unspecified "' + this.config.cloud + '" section in config');
   }
   this.client = client(this.config[this.config.cloud]);
-  this.listTemplate = handlebars.compile(fs.readFileSync(__dirname + '/templates/index.html').toString());
+  this.listTemplate = handlebars.compile(fs.readFileSync(
+    template || __dirname + '/templates/index.html'
+  ).toString());
 };
 
 Gallery.prototype.list = function(req, res) {
