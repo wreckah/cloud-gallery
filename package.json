@@ -17,7 +17,6 @@
     "express": "=3.4.7",
     "request": "=2.30.0",
     "lodash": "=2.4.1",
-    "node-gd": "=0.2.3",
     "handlebars": "=1.1.2"
   },
   "scripts": {

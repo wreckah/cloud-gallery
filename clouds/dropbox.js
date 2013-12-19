@@ -1,6 +1,3 @@
-// Oauth: https://www.dropbox.com/1/oauth2/authorize?redirect_uri=http://127.0.0.1:3000/auth/dropbox&response_type=code&client_id=ihasqjofruk51zk
-// curl -XPOST -d 'code=uiHlmwMv1wIAAAAAAAAAARm96caexQEPKZDmIdKb9gQ&grant_type=authorization_code&client_id=ihasqjofruk51zk&client_secret=hu5kf4x6hxhbewg&redirect_uri=http://127.0.0.1:3000/auth/dropbox' https://api.dropbox.com/1/oauth2/token
-// {"access_token": "bB1P7Nk8z0kAAAAAAAAAAScxN-6EQ-nyAWhZKx1GnfSYZkxzwBlqPJAY3e5NJ37V", "token_type": "bearer", "uid": "248206980"}
 var request = require('request');
 var debug = require('debug')('cloud-gallery:dropbox');
 
