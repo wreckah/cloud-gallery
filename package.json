@@ -1,0 +1,26 @@
+{
+  "author": "wreckah@ya.ru",
+  "name": "cloud-gallery",
+  "description": "Photo gallery generator from your cloud storage (e.g. DropBox)",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wreckah/cloud-gallery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wreckah/cloud-gallery"
+  },
+  "main": "gallery.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "debug": "=0.7.4",
+    "express": "=3.4.7",
+    "request": "=2.30.0",
+    "lodash": "=2.4.1",
+    "node-gd": "=0.2.3",
+    "handlebars": "=1.1.2"
+  },
+  "scripts": {
+    "start": "app.js"
+  }
+}

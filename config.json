@@ -1,0 +1,7 @@
+{
+  "cloud": "dropbox",
+  "dropbox": {
+    "path": "/photos",
+    "access_token": ""
+  }
+}

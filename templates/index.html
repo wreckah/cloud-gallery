@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='content-type' value='text/html;charset=utf8'>
+  <title>Cloud gallery</title>
+  <style type='text/css'>
+    body {margin:0; padding: 0}
+  </style>
+</head>
+<body>
+
+<h1>Gallery</h1>
+
+<ul>
+{{#images}}
+  <li><a href="/i{{path}}"><img src="/t{{path}}" /></a></li>
+{{/images}}
+</ul>
+
+</body>
+</html>
